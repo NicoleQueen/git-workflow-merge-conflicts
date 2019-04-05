@@ -8,9 +8,9 @@
 
 ## Introduction
 
-When working on our own on utilizing a standard git workflow a project, chances
-are we may not encounter clashing code when merging between branches. However,
-in a collaborative environment, things can get a little messy.
+When we're using Git to organize a solo project, there's a low chance
+of running into code conflicts between branches. However, in a collaborative
+environment, things can get a little messy.
 
 Don't let it cause alarm! With a little bit of context, time, and patience, we
 can often step through merge conflicts and "resolve" them one by one, ending up
@@ -21,11 +21,12 @@ cancel or undo changes and start again if necessary.
 
 ## Identify Merge Conflicts
 
-How does this happen? Let's take a simple scenario: We were very careful to pull
-down a working branch and made several commits documenting our progress.
-However, when we are ready to "push" our changes back up to the remote branch or
-"merge" them into another branch such as `master`, we get got an error from Git
-along the lines of:
+In Git, "merging" is the act of integrating another branch into your current
+working branch. How does this happen? Let's take a simple scenario: We were
+very careful to pull down a working branch and made several commits documenting
+our progress. However, when we are ready to "push" our changes back up to the
+remote branch or "merge" them into another branch such as `master`, we get an
+error from Git along the lines of:
 
 ```bash
 Auto-merging README.md
@@ -42,8 +43,7 @@ create a merge conflict.
 
 ## Recognize Resolving Merge Conflicts
 
-In Git, "merging" is the act of integrating another branch into your current
-working branch. You're taking changes from another context and combining them
+When you merge, you're taking changes from another context and combining them
 with your current working files.
 
 If you open the offending file in a text editor, you’ll find an indication of
