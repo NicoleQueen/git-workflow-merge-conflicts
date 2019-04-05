@@ -37,7 +37,7 @@ Git merge conflicts occur when competing changes are made to the same line of a
 file, or when one person edits a file and another person deletes the same file.
 Usually, Git is able to easily merge multiple changes by different people
 without issue, but a change like reordering a couple blocks of code or text or
-even a small change like adding or removing some content from the same line can
+even a small change like adding or removing code from the same line can
 create a merge conflict.
 
 ## Recognize Resolving Merge Conflicts
@@ -83,6 +83,18 @@ the commit before the merge happened by viewing the log with `git log` and reset
 it with `git reset --hard <commit number>` to start over again.
 
 ## Conclusion
+
+Merge conflicts can seem like a scary task. Developers fear that they may lose
+important data in the act of combining content from other commits. However, a
+merge conflict is not something to be feared! It will not bring you or your team
+to a halt or cripple your central repository. Git merge conflicts can only occur
+on a developer's local machine&mdash;and not on the server. This allows us to
+assess each change one by one, and bring the files together safely. Git gives us
+clear indicators where each conflict lies and the tools to correct them. Git
+also gives us tools to undo changes that were made in the merge conflict, in
+case in mistakes were made and noticed after the fact. This feature allows
+branching to be additionally useful when it comes to having a sandbox to test
+out new code.
 
 ## Resources
 [Dealing with Merge Conflicts](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)
