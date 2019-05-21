@@ -3,8 +3,8 @@
 ## Learning Goals
 
 - Identify merge conflicts
-- Recognize resolving merge conflicts
-- Recognize reverting merges
+- Resolve merge conflicts
+- Revert merges
 
 ## Introduction
 
@@ -41,7 +41,7 @@ without issue, but a change like reordering a couple blocks of code or text or
 even a small change like adding or removing code from the same line can
 create a merge conflict.
 
-## Recognize Resolving Merge Conflicts
+## Resolve Merge Conflicts
 
 When you merge, you're taking changes from another context and combining them
 with your current working files.
@@ -71,7 +71,7 @@ it. When you're done with that file, you mark the file as resolved by executing
 Finally, a merge conflict situation needs to be concluded by a regular commit
 with a commit message noting the conflict resolution.
 
-## Recognize Reverting Merges
+## Revert Merges
 
 Keep in mind that you can return to the state before you started the merge at
 any time. This should give you the confidence that you can't break anything. On
